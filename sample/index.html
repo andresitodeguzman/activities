@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sample</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="../src/apptivity.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <app-activity name="parent">
+        <h1>Hello World</h1>
+        <p>I am a parent activity</p><br>
+        <button id="openChild">Open Child Activity</button>
+    </app-activity>
+ 
+    <app-activity name="child">
+        <h1>Child Activity Here</h1>
+        <p>Hey! I am a child activity</p><br>
+        <button id="openParent">Get back to Parent Activity</button>
+    </app-activity>
+
+</body>
+</html>
+<script>
+</script>
