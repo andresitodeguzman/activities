@@ -59,7 +59,7 @@ $("#openChildButton").click(()=>{
 
     // Show app activity
     $.app({
-        activity:"child",
+        activity:"child"
     });
 
 });

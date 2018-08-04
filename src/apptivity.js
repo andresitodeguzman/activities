@@ -5,13 +5,17 @@
  * 2018
  */
 
-customElements.define('app-activity',
-    class extends HTMLElement {
-        constructor(){
-            super();
+if(customElements){
+    customElements.define('app-activity',
+        class extends HTMLElement {
+            constructor(){
+                super();
+            }
         }
-    }
-);
+    );
+} else {
+    console.error({"Error":"Failed to register 'app-activity' component. The browser may not support this feature yet. Please include a polyfill to ensure support on older browsers."});
+}
 
 (function($){
 
