@@ -8,7 +8,7 @@ jQuery plugin and mini-framework for easy Single Page Applications for a Progres
 ## How to Use
 Reference jQuery and the apptivity.js in the html file. It is recommended to place both at the head. jQuery must be referenced first before the apptivity js file.
 
-```
+```html
 <head>
     <script src="assets/js/jquery.min.js" type="text/js"></script>
     <script src="assets/js/apptivity.min.js" type="text/js"></script>
@@ -21,7 +21,7 @@ The app activity is a placeholder for a single activity. Here, you will define a
 
 The name property is used to identify that activity. Choose a straightforward and meaningful name.
 
-```
+```html
 <app-activity name="parent">
     <!-- Insert Content Here -->
 </app-activity>
@@ -35,9 +35,9 @@ The available options are as follows:
 - `set-style` - This will set the margin to 0px and width & height to 100%
 - `set-position` - This will set the position to fixed
 
-To show an activity you may send an object `{activity:'activity-name'}` You do not need to clear the view, it would automatically be cleared when opening an activity.
+To show an activity you may send an object `{activity:'activity-name'}` as a parameter. You do not need to clear the view, it would automatically be cleared when opening an activity.
 
-```
+```html
 <app-activity name="parent">
     <h1>Parent</h1>
     <button id="openChildButton">Open Child</button>
@@ -69,7 +69,7 @@ $("#openChildButton").click(()=>{
 
 To have a fade effect, add transition:"fade"
 
-```
+```js
 $.app({
     activity:"child",
     transition:"fade"
